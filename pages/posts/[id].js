@@ -9,7 +9,7 @@ export default function Details(props) {
 }
 
 export async function getStaticPaths() {
-   const res = await fetch("http://localhost:3000/api/posts");
+   const res = await fetch("http://127.0.0.1:3000/api/posts");
    const data = await res.json();
    
    const paths = data.map(d => {
