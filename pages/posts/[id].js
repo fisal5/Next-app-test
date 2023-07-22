@@ -24,7 +24,7 @@ export async function getStaticPaths() {
    }
 }
 export async function getStaticProps(context) {
-    const res = await fetch(`http://localhost:3000/api/posts/${context.params.id}`);
+    const res = await fetch(`http://127.0.0.1:3000/api/posts/${context.params.id}`);
     const data = await res.json();
     return {
         props: {
